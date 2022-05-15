@@ -31,6 +31,9 @@ const TEXT_SIZE = 40; // text font height in pixels
 var canv = document.getElementById("gameCanvas");
 var ctx = canv.getContext("2d");
 
+canv.width = innerWidth;
+canv.height = innerHeight;
+
 //set up sound effects
 var fxlaser = new Sound("sounds/laser.m4a", 5, 0.5);
 var fxExplode = new Sound("sounds/explode.m4a");
